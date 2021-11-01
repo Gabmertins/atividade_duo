@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.accordion {
+    max-width: 1300px;
+}
+
+.accordion-body {
+    padding: 1rem 0px;
+    font-weight: 500;
+    color: #A6A6A6;
+}
+
+.accordion-button {
+    background-color: transparent;
+    color: #A142EB;
+    padding: 1rem 0px;
+    font-weight: 700;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #A142EB;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url("/assets/icones/seta.png");
+}
+
+.accordion-button::after {
+    background-image: url("/assets/icones/seta.png");
+    transition: transform .3s ease-in-out
+}
+
+.accordion-button:focus {
+    border-color: transparent;
+    box-shadow: none
+}
+
+.accordion-item {
+    background-color: transparent;
+}
+
+.body-accordion {
+    background: #F1F1F1;
+    padding: 50px 0;
+}
+
+.comprar {
+    background: #0BC1E5;
+    border-radius: 40px;
+    margin-top: 10px;
+}
+
+.consultor {
+    background: #7928B7;
+    border-radius: 40px;
+    margin-top: 10px;
+}
+
+.centro {
+    align-items: center;
+    flex-wrap: inherit;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 90%;
+    position: relative;
+}
+
+.centro-accordion {
+    align-items: center;
+    flex-wrap: inherit;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 95%;
+    position: relative;
+}
+
+.footer {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background: #A142EB;
+}
+
+.franqueado {
+    background: #E1A607;
+    border-radius: 40px;
+    margin-top: 10px;
+}
+
+.gradiente {
+    position: initial;
+    width: 50%;
+    height: 500px;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 60%, rgba(255, 255, 255, 0) 100%);
+}
+
+.header {
+    background: url(/assets/img/header.png) center;
+    height: 500px;
+}
+
+.header h1 {
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 15px;
+    color: #E1A607;
+}
+
+.header p {
+    color: #444;
+    width: 366px;
+}
+
+.header .clique {
+    color: #A142EB;
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+.linha {
+    width: 80%;
+    height: 1px;
+    background: #E7E7E7;
+}
+
+.margin-auto {
+    margin: auto;
+}
+
+.navbar {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+}
+
+.nav-edit {
+    margin: 0 auto;
+    max-width: 90%;
+    position: relative;
+}
+
+.nav-item,
+.nav-link {
+    color: #ffffff !important;
+    font-weight: 600;
+    display: flex;
+    padding: 6px 18px;
+    margin: 0px 6px;
+    font-size: 12px;
+}
+
+.nav-item img {
+    width: 16px;
+    height: 20px;
+    margin: auto;
+}
+
+.nav-roxo {
+    width: 50%;
+    height: 60px;
+    background: #A142EB;
+    border-bottom-right-radius: 40px;
+}
+
+.pad-duvidas {
+    padding-top: 90px;
+}
+
+.restrita-desk {
+    background: #E1A607;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    right: 0;
+    float: right;
+    padding-top: 24px;
+}
+
+.restrito-responsivo {
+    display: none;
+}
+
+.comprar:hover,
+.consultor:hover,
+.franqueado:hover,
+.restrita-desk:hover {
+    background: #444444;
+    transition: .3s;
+}
+
+.restrita-resp:hover {
+    background: #444444;
+    transition: .3s;
+    border-radius: 40px;
+}
+
+@media only screen and (max-width: 1510px) {
+    .nav-roxo {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 1257px) {
+    .nav-roxo {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 1076px) {
+    .nav-roxo {
+        width: 76%;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .navbar {
+        padding: 1rem;
+        background: #ffffff;
+    }
+    .nav-item,
+    .nav-link {
+        margin: 5px auto;
+        padding: 2px 18px;
+    }
+    .nav-item img {
+        margin: auto 5px;
+    }
+    .nav-roxo {
+        width: 100%;
+        background: none;
+        height: auto;
+    }
+    .restrita-desk {
+        display: none;
+    }
+    .restrito-responsivo {
+        display: inherit;
+        background: #E1A607;
+        border-radius: 40px;
+        right: 0;
+        float: right;
+    }
+    .restrita-resp {
+        margin-right: auto;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    .header {
+        background: url(/assets/img/header.png);
+    }
+    .gradiente {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .header p {
+        width: 100%;
+    }
+}
